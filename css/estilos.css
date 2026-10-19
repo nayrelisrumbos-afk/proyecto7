@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor-principal {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+
+
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.listo {
+    width: 100%;
+    border-radius: 9px;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6a1b9a;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ce93d8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.error {
+    border-color: red;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 12px;
+}
+
+
+
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    color: #6a1b9a;
+    border-radius: 100%;
+    border: 9px solid #e1bee7;
+    border-top: 9px solid #6a1b9a;
+    border-right: 9px solid #6a1b9a;
+    display: flex;
+      font-size: 24px;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+.completado {
+    background-color: #f3e5f5;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+
+    .completado {
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    @media (max-width: 600px) {
+        .contenedor-principal {
+            flex-direction: column;
+        }
+
+        .seccion-formulario,
+        .seccion-progreso {
+            width: 100%;
+        }
+    }
+}

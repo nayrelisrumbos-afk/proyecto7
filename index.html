@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario hecho con HTML y CSS.">
+    <meta name="keywords" content="formulario, accesibilidad, perfil, HTML, CSS">
+    <meta name="author" content="Nayrelis Rumbos">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor-principal">
+    <section>
+            <section class="circulo">
+                50%
+            </section>
+            <h2>lo que falta por completar es:</h2>
+            <section class="completado">
+                <ul>
+                    <li class="completado">perfil creado</li>
+                    <li class="completado">Actualizar datos</li>
+                    <li class="completado">crear usuario</li>
+                    <li>agregar amigos para que vean tus proyectos</li>
+                    <li>proyectos completados y publicados</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+
+            <section class="campo">
+                <label for="nombre">Nombre </label>
+                <input type="text" id="nombre" placeholder="pon tu nombre aquí!" aria-required="true">
+            </section>
+
+
+            <section class="campo">
+                <label for="contrasena">contraseña</label>
+                <section class="contrasena">
+                    <input type="password" id="contrasena" placeholder="contraseña aquí!" aria-required="true">
+                    <button type="button" class="mirar" aria-label="Mostrar contraseña">🧐</button>
+                </section>
+            </section>
+
+            <section class="campo">
+                <label for="confirmar">confirmar contraseña</label>
+                <section class="contrasena">
+                    <input type="password" id="confirmar" placeholder="contraseña aquí!" aria-required="true">
+                    <button type="button" class="mirar" aria-label="Mostrar contraseña">🧐</button>
+                </section>
+            </section>
+            <section class="campo">
+                <label for="correo">correo</label>
+                <input type="email" id="correo" value="correode@ejemplo.com" class="error" aria-invalid="true">
+                <span id="correo" class="mensaje-error">Este correo ya está en uso</span>
+            </section>
+            <button type="button" class="listo">listo</button>
+
+        </section>
+
+
+    
+
+    </main>
+
+</body>
+
+</html>
